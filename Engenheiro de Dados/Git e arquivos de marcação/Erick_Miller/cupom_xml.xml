@@ -1,0 +1,64 @@
+<!-- definam um xml que tenha a estrutura de um cupom fiscal de um mercado
+
+para os itens precisamos  de:
+nome do produto
+quantidade (float)
+valor unitário (float)
+tipo unidade (un, kg, cx, 1t)
+valor total do item (float)
+
+identid
+-->
+
+<?xml version='1.0'?>
+<cupom_fiscal>
+    <estabelecimento>
+        <nome>Mercadinho do Zé</nome>
+        <cnpj cod14='10565000000192'>10.565.000/0001-92</cnpj>
+    </estabelecimento>
+    <produtos>
+        <produto id ='1'>
+            <nome_produto> Carne </nome_produto>
+            <quantidade> 2 </quantidade>
+            <valor_unitario> 35.00 </valor>
+            <tipo_unidade> kg </tipo_unidade>
+            <valor_total> 70.00 </valor_total>
+        </produto>
+        <produto id ='2'>
+            <nome_produto> Frango </nome_produto>
+            <quantidade> 2 </quantidade>
+            <valor_unitario> 22.00 </valor>
+            <tipo_unidade> kg </tipo_unidade>
+            <valor_total> 44.00 </valor_total>
+        </produto>
+        <produto id ='3'>
+            <nome_produto> Feijão </nome_produto>
+            <quantidade> 1 </quantidade>
+            <valor_unitario> 10.00 </valor>
+            <tipo_unidade> kg </tipo_unidade>
+            <valor_total> 10.00 </valor_total>
+        </produto>
+        <produto id ='4'>
+            <nome_produto> Arroz </nome_produto>
+            <quantidade> 2 </quantidade>
+            <valor_unitario> 7.00 </valor>
+            <tipo_unidade> kg </tipo_unidade>
+            <valor_total> 14.00 </valor_total>
+        </produto>
+        <produto id ='5'>
+            <nome_produto> Charque </nome_produto>
+            <quantidade> 0.5 </quantidade>
+            <valor_unitario> 42.00 </valor>
+            <tipo_unidade> kg </tipo_unidade>
+            <valor_total> 21.00 </valor_total>
+        </produto>
+        <produto id ='5'>
+            <nome_produto> Biscoito </nome_produto>
+            <quantidade> 2 </quantidade>
+            <valor_unitario> 2.00 </valor>
+            <tipo_unidade> un </tipo_unidade>
+            <valor_total> 4.00 </valor_total>
+        </produto>
+    </produtos>
+    <total>163.00</total>
+</cupom_fiscal>
